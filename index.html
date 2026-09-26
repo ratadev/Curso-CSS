@@ -59,6 +59,12 @@
       .link {
         color: red;
       }
+
+      #show {
+        background: #09f;
+        color: white;
+        border: 0;
+      }
     </style>
   </head>
 
@@ -110,6 +116,14 @@
       muted
       loop
     ></video> -->
+
+    <dialog id="modal">
+      <h2>Gracias por tu contacto</h2>
+      <p>Te responderemos lo más pronto posible.</p>
+      <button id="close">Cerrar</button>
+    </dialog>
+
+    <button id="show">Ver más información</button>
 
     <main>
       <p>
@@ -263,14 +277,6 @@
         </form>
       </section>
     </main>
-
-    <dialog id="modal">
-      <h2>Gracias por tu contacto</h2>
-      <p>Te responderemos lo más pronto posible.</p>
-      <button id="close">Cerrar</button>
-    </dialog>
-
-    <button id="show">Mostrar diálogo</button>
 
     <script>
       const show = document.getElementById("show");
